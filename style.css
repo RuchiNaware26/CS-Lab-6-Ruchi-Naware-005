@@ -11,7 +11,7 @@
     background-color: red;
     position: relative;
     right: 30px;
-    
+    top: 20px;
     
 }
 
@@ -109,21 +109,24 @@
 
 .parent3{
     height: 400px;
-    width: 400px;
-    display: ;
+    width: 800px;
+    display: flex;
     justify-content: space-evenly;
     border: solid; border-color: black;
-    .child-3{
-        border: dashed; border-color: aqua;
+}
+
+.parent3  .child-3{
+        border: dashed 2px aqua;
         height: 100px;
         width: 100px;
+        background-color: red;
     }
-}
+
 
 .parent4{
     height: 400px;
     width: 400px;
-    background-color:white;
+    background-color: white;
     border: 4px solid black;
     display: flex;
     flex-wrap: wrap;
@@ -138,48 +141,79 @@
 .parent5{
     height: 400px;
     width: 400px;
-    border: solid; border-color: black;
+    border: solid black 2px;
     display: flex;
-    .child-a{
-        height: 40px;
-        background-color: aqua;
-    }
-    .child-b{
-        height: 50px;
-        background-color: blanchedalmond;
-    }
-    .child-c{
-        height: 80px;
-        background-color: blue;
-    }
     align-items: center; 
-    
 }
+  .parent5  .child-a{
+        height: 40px;
+        width:100px;
+        background-color: aqua;
+        display:inline-block;
+    }
+ .parent5  .child-b{
+        height: 50px;
+        width:100px;
+        background-color: blanchedalmond;
+        display:inline-block;
+    }
+.parent5  .child-c{
+        height: 80px;
+        width:100px;
+        background-color: blue;
+        display:inline-block;
+    }
+    
+
 
 .question14{
-    height: 400px;
-    width: 400px;
-    border: solid; border-color: black; background-color: blanchedalmond;
+    height: 700px;
+    width: 700px;
+    border: solid black 2px;
+    background-color: blanchedalmond;
     display: flex;
-    align-content: space-evenly;
-    .flex-14{
-        height: 200px;
-        width: 200px;
-        border: dashed; border-color: blue;
-        background-color: aqua;
-        display: flex;
-        align-content: space-evenly;
-    }
+    flex-wrap: wrap;
+    align-content: center;
+
 }
+    .question14 .flex-14{
+        height: 100px;
+        width: 200px;
+        border: dashed 2px blue;
+        background-color: green;
+        display: inline-block;
+      
+    }
+
 
 .question15{
     height: 200px;
-    width: 200px;
+    width: 400px;
     border: solid; border-color: black;
     display: flex;
-    .flex-15{
+}
+
+    .flex-15a{
+        width:100px;
+        height:70px;
         background-color: chocolate;
-        border-color: red;
+        border-color: red 2px solid;
+        display:inline-block;
+    }
+    .flex-15b{
+        width:100px;
+        height:70px;
+        background-color: green;
+        border-color: red 2px solid;
+        display:inline-block;
+        flex-grow: 2;
+    }
+    .flex-15c{
+        width:100px;
+        height:70px;
+        background-color: blue;
+        display:inline-block;
+        border-color: red 2px solid;
     }
 }
 
